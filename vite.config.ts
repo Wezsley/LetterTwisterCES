@@ -5,6 +5,7 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: './', // <-- 👈 THIS IS THE FIX
   server: {
     host: "::",
     port: 8080,
